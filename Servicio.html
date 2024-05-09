@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PubliTech - Página de Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos CSS adicionales */
+        body {
+            font-family: 'Lucida Bright', serif; /* Aplicando la tipografía Lucida Bright al cuerpo del documento */
+            background-color: #E0F2FF; /* Fondo azul claro */
+            padding-top: 20px;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal */
+        }
+        header {
+            background-color: #004080; /* Azul oscuro para el encabezado */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative; /* Para que los elementos hijos se posicionen correctamente */
+        }
+        
+        nav {
+            background-color: #007BFF; /* Azul más claro para la barra de navegación */
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #0056B3; /* Cambio de color al pasar el cursor sobre los enlaces */
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 300px; /* Altura reducida del carrusel */
+            object-fit: cover;
+        }
+        .welcome-section {
+            background-color: #fff;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .welcome-section h2 {
+            color: #004080;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .welcome-section p {
+            color: #666;
+            font-size: 18px;
+        }
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background-color: #004080;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PubliTech</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="Acerca.html">Acerca de</a>
+    <a href="Servicio.html">Servicios</a>
+    <a href="Contacto.html">Contacto</a>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://www.ginatravel.com/wp-content/uploads/2019/09/paquetes-turisticos-a-jamaica-1-1024x675.jpg" class="card-img-top" alt="Personalización de Paquetes Turísticos">
+                <div class="card-body">
+                    <h5 class="card-title">Personalización de Paquetes Turísticos</h5>
+                    <p class="card-text">Permita a los usuarios personalizar completamente sus paquetes turísticos según sus preferencias individuales.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://previews.123rf.com/images/svyatkovsky/svyatkovsky2002/svyatkovsky200200417/141688992-planificaci%C3%B3n-tur%C3%ADstica-de-vacaciones-cierra-las-manos-de-la-gente-en-el-mapa.jpg" class="card-img-top" alt="Flexibilidad en la Planificación del Viaje">
+                <div class="card-body">
+                    <h5 class="card-title">Flexibilidad en la Planificación del Viaje</h5>
+                    <p class="card-text">Permita a los usuarios ajustar fácilmente los detalles de su itinerario de viaje de acuerdo con sus necesidades cambiantes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Integración de Recomendaciones Contextuales">
+                <div class="card-body">
+                    <h5 class="card-title">Integración de Recomendaciones Contextuales</h5>
+                    <p class="card-text">Desarrollo de algoritmos de recomendación de viajes para ofrecer sugerencias personalizadas basadas en la ubicación, preferencias de actividades, restaurantes, eventos locales, condiciones climáticas, transporte público, entre otros aspectos relevantes para la experiencia de viaje.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/74IE6MW3QFCIFHTLHMFX3O4GKQ.jpg" class="card-img-top" alt="Facilidad de Uso y Accesibilidad">
+                <div class="card-body">
+                    <h5 class="card-title">Facilidad de Uso y Accesibilidad</h5>
+                    <p class="card-text">Diseño de una interfaz de usuario intuitiva y navegación sencilla para una experiencia de usuario optimizada, que incluye procesos de registro y configuración de cuenta optimizados, funciones de búsqueda avanzada, opciones de personalización de la experiencia del usuario, y soporte en línea integrado.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://i0.wp.com/2.bp.blogspot.com/-wpxnVB8vseo/Ts719o4PQzI/AAAAAAAABM4/pPec7j07OV8/s1600/visita-guatemala-viaje%253Dprecio-730347.jpg" class="card-img-top" alt="Promoción de Ofertas Especiales">
+                <div class="card-body">
+                    <h5 class="card-title">Promoción de Ofertas Especiales</h5>
+                    <p class="card-text">Creación y gestión de campañas promocionales personalizadas, segmentación efectiva de audiencia, promoción en redes sociales, seguimiento en tiempo real de resultados de campañas, análisis de datos para entender el uso y evaluación de la efectividad de estrategias de marketing y ventas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blt1fba85432c25b789/63728282f9a34d1271d5dc86/tools-categories-XL_(2).jpg?crop=99.82p,100p,x0,y0&width=720&height=405&auto=webp" class="card-img-top" alt="Mejoras en la Plataforma de Alquiler Vacacional">
+                <div class="card-body">
+                    <h5 class="card-title">Mejoras en la Plataforma de Alquiler Vacacional</h5>
+                    <p class="card-text">Mejora de la experiencia de búsqueda y reserva en plataformas de alquiler vacacional, incluyendo una interfaz de búsqueda fácil de usar, reserva simplificada y sin fricciones, integración con sistemas de terceros para sincronización de reservas, entre otros.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://www.guatemala.com/fotos/2020/06/Guia-de-Inguat-para-empresas-de-transporte-turistico-en-Guatemala.jpg" class="card-img-top" alt="Información de Transporte Turístico en Tiempo Real">
+                <div class="card-body">
+                    <h5 class="card-title">Información de Transporte Turístico en Tiempo Real</h5>
+                    <p class="card-text">Integración de fuentes de datos de transporte relevantes, desarrollo de una interfaz de usuario intuitiva para acceder a esta información, y monitoreo del rendimiento de las fuentes de datos para garantizar la precisión y actualización de la información proporcionada.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://image.isu.pub/210930234825-29c44bb3d06b24e6ca9988a93872d727/jpg/page_1.jpg" class="card-img-top" alt="Adaptación de la Publicidad a Diferentes Segmentos de Visitantes">
+                <div class="card-body">
+                    <h5 class="card-title">Adaptación de la Publicidad a Diferentes Segmentos de Visitantes</h5>
+                    <p class="card-text">Segmentación efectiva de audiencia basada en criterios demográficos y comportamiento del usuario, personalización de contenido publicitario, estrategias de retargeting publicitario, y optimización continua del contenido publicitario para maximizar el impacto y la relevancia para los distintos segmentos de visitantes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>Derechos de Autor © 2024 PubliTech. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

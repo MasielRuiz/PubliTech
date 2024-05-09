@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PubliTech - Página de Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos CSS adicionales */
+        body {
+            font-family: 'Lucida Bright', serif; /* Aplicando la tipografía Lucida Bright al cuerpo del documento */
+            background-color: #E0F2FF; /* Fondo azul claro */
+            padding-top: 20px;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal */
+        }
+        header {
+            background-color: #004080; /* Azul oscuro para el encabezado */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative; /* Para que los elementos hijos se posicionen correctamente */
+        }
+        
+        nav {
+            background-color: #007BFF; /* Azul más claro para la barra de navegación */
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #0056B3; /* Cambio de color al pasar el cursor sobre los enlaces */
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 300px; /* Altura reducida del carrusel */
+            object-fit: cover;
+        }
+        .welcome-section {
+            background-color: #fff;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .welcome-section h2 {
+            color: #004080;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .welcome-section p {
+            color: #666;
+            font-size: 18px;
+        }
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #004080;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PubliTech</h1>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="Acerca.html">Acerca de</a>
+    <a href="Servicio.html">Servicios</a>
+    <a href="Contacto.html">Contacto</a>
+</nav>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://s7g10.scene7.com/is/image/barcelo/lugares-turisticos-de-guatemala-tikal?&&fmt=webp-alpha&qlt=75&wid=1200&fit=crop,1" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://blog.uber-cdn.com/cdn-cgi/image/width=2161,height=1081,quality=80,onerror=redirect,format=auto/wp-content/uploads/2018/10/Lugares-para-visitar-en-la-Ciudad-de-Guatemala-que-har%C3%A1n-que-te-enamores-de-ella.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.prensalibre.com/wp-content/uploads/2022/11/Los-cinco-mejores-lugares-para-vivir-en-Guatemala-para-expatriados-y-nomadas-digitales-01.jpg?quality=52" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="welcome-section">
+    <h2>¡Bienvenido a PubliTech!</h2>
+    <p>En PubliTech, estamos redefiniendo la experiencia de planificación de viajes con nuestra innovadora plataforma de personalización de paquetes turísticos. ¿Te imaginas diseñar tus vacaciones perfectas con solo unos pocos clics? ¡Ahora es posible con nosotros!</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://bienestarfitness.com/wp-content/uploads/2018/11/kayak-travesia.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Libertad para Explorar</h5>
+                    <p class="card-text">Crea tu propio itinerario con total flexibilidad: elige destinos, actividades y alojamientos según tus deseos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/hkjvgtx9pic9mrsd3tfa" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Consejos Personalizados</h5>
+                    <p class="card-text">Descubre joyas ocultas y experiencias únicas con nuestras recomendaciones adaptadas a tus preferencias.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://www.guatemala.com/fotos/2022/02/Lugares-turisticos-en-Guatemala-con-promociones-para-celebrar-el-Dia-Del-Carino-2022.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ofertas Exclusivas y Descuentos</h5>
+                    <p class="card-text">Aprovecha nuestras promociones especiales y accede a precios irresistibles para tus próximas vacaciones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>Derechos de Autor © 2024 PubliTech. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
